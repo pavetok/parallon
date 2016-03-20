@@ -8,7 +8,7 @@ import static java.util.Arrays.asList;
 class Configuration {
     private static ConcurrentLinkedQueue<String> hosts = new ConcurrentLinkedQueue<>(asList(getProperty("hosts").split(",")));
 
-    static String takeHost() {
+    static String acquireHost() {
         return hosts.poll();
     }
 
