@@ -6,6 +6,9 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import static com.pavetok.parallon.Config.acquireHost;
 import static com.pavetok.parallon.Config.releaseHost;
 
@@ -21,6 +24,7 @@ public class BaseTest extends AbstractTestNGSpringContextTests {
     public void classSetUp() {
         host = acquireHost();
         app.setHost(host);
+        Logger.getLogger("com.codeborne.selenide").setLevel(Level.WARNING);
         System.out.println(String.format("%s, %s, %s", Thread.currentThread().getName(), "classSetUp", app));
     }
 
