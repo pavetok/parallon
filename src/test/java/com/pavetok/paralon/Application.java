@@ -4,6 +4,9 @@ class Application {
 
     private String host;
 
+    public Application() {
+    }
+
     Application(String host) {
         this.host = host;
     }
@@ -17,5 +20,9 @@ class Application {
         return "Application{" +
                 "host='" + host + '\'' +
                 '}';
+    }
+
+    void setHost(String host) {
+        this.host = host;
     }
 }
