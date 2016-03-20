@@ -1,6 +1,6 @@
 package com.pavetok.parallon;
 
-class Application {
+public class Application {
 
     private String host;
 
@@ -11,15 +11,18 @@ class Application {
     public String getHost() {
         return host;
     }
+    void setHost(String host) {
+        this.host = host;
+    }
+
+    public String getUrl() {
+        return "http://" + host;
+    }
 
     @Override
     public String toString() {
         return "Application{" +
                 "host='" + host + '\'' +
                 '}';
-    }
-
-    void setHost(String host) {
-        this.host = host;
     }
 }
