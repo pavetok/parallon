@@ -3,7 +3,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
     <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
         <property name="scopes">
             <map>
@@ -14,6 +13,6 @@
         </property>
     </bean>
 
-    <bean name="app" class="com.pavetok.paralon.Application" scope="thread"/>
+    <bean name="app" class="com.pavetok.parallon.Application" scope="thread"/>
 
 </beans>

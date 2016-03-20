@@ -1,4 +1,4 @@
-package com.pavetok.paralon;
+package com.pavetok.parallon;
 
 import org.testng.annotations.Test;
 

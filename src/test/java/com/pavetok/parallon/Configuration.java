@@ -1,4 +1,4 @@
-package com.pavetok.paralon;
+package com.pavetok.parallon;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 

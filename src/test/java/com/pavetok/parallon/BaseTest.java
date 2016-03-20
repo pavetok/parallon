@@ -1,4 +1,4 @@
-package com.pavetok.paralon;
+package com.pavetok.parallon;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -6,12 +6,13 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import static com.pavetok.paralon.Configuration.acquireHost;
-import static com.pavetok.paralon.Configuration.releaseHost;
+import static com.pavetok.parallon.Configuration.acquireHost;
+import static com.pavetok.parallon.Configuration.releaseHost;
 
 @ContextConfiguration("classpath:context.xml")
 public class BaseTest extends AbstractTestNGSpringContextTests {
-    private String host;
+
+    String host;
 
     @Autowired
     Application app;

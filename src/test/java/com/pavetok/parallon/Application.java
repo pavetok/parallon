@@ -1,14 +1,11 @@
-package com.pavetok.paralon;
+package com.pavetok.parallon;
 
 class Application {
 
     private String host;
 
     public Application() {
-    }
-
-    Application(String host) {
-        this.host = host;
+        // empty
     }
 
     public String getHost() {
