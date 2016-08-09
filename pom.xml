@@ -67,7 +67,7 @@
                 <version>2.19.1</version>
                 <configuration>
                     <parallel>classes</parallel>
-                    <threadCount>2</threadCount>
+                    <threadCount>5</threadCount>
                 </configuration>
             </plugin>
         </plugins>

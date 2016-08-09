@@ -11,6 +11,7 @@ public class Application {
     public String getHost() {
         return host;
     }
+
     void setHost(String host) {
         this.host = host;
     }

@@ -21,11 +21,11 @@ public class BaseTest extends AbstractTestNGSpringContextTests {
     protected Application app;
 
     @BeforeClass
-    public void classSetUp() {
+    public void classSetUp() throws Exception {
         host = acquireHost();
         app.setHost(host);
         Logger.getLogger("com.codeborne.selenide").setLevel(Level.WARNING);
-        System.out.println(String.format("%s, %s, %s", Thread.currentThread().getName(), "classSetUp", app));
+        System.out.println(String.format("%s, %s, %s, %s", Thread.currentThread().getName(), "classSetUp", this.getClass().getSimpleName(), app));
     }
 
     @AfterClass
